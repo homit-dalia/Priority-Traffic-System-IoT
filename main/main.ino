@@ -16,12 +16,14 @@ int button4 = 8;
 int R4 = 9;
 int G4 = 10;
 
-int delay_red = 5000;
-int delay_green = 5000;
+int delay_red = 2000;
+int delay_green = 2000;
 
 int flash_time = 150; // time is double
 
 int buttonState = 0;
+int buttonState1 = 0;
+
 int button_prev_state[4];
 int button_pressed_count[4];
 
@@ -53,7 +55,25 @@ void setup() {
 }
 
 void loop() {
-  
+//   buttonState = digitalRead(button3);
+//   buttonState1 = digitalRead(button1);
+
+//   if (buttonState != HIGH) {
+//     // turn LED on:
+//     digitalWrite(G3, HIGH);
+//   } else {
+//     // turn LED off:
+//     digitalWrite(G3, LOW);
+//   }
+
+// if (buttonState1 != HIGH) {
+//     // turn LED on:
+//     digitalWrite(G1, HIGH);
+//   } else {
+//     // turn LED off:
+//     digitalWrite(G1, LOW);
+//   }
+
   green_light(G1, R1);
   other_lights_red(R1);
   if(button_pressed(button1, 0)){flash_red_green(R1);}
@@ -122,12 +142,12 @@ void ambulance_detected(int green){
 bool button_pressed(int pin, int value){
   buttonState = digitalRead(pin);
   if (buttonState != button_prev_state[value]){
-    if(buttonState != HIGH){
+
       button_pressed_count[value]++;
       Serial.println("Button");
       Serial.println(button_pressed_count[value]);
       return true;
-    }
+    
   }
   return false;
 }
