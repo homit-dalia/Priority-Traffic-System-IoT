@@ -11,7 +11,7 @@ This project was made using Arduino UNO, but can also be made with Node MCU, Ras
 - 12 100 Ohm Resistor 
 - Breadboard
 - Sound Sensor
-- Jumpoer Cables (Connecting Wires)
+- Jumper Cables (Connecting Wires)
 
 ## Pin Diagram
 
