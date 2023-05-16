@@ -1,5 +1,5 @@
-int SOUND = 1;
 int SOUNDANALOG = A4;
+
 int button1 = 2;
 int R1 = 3;
 int G1 = 4;
@@ -18,19 +18,11 @@ int G4 = 10;
 
 int delay_green = 2000;
 
-
 int flash_time = 300; // time is double
 int siren_threshold = 800;
 
-int buttonState = 0;
-int buttonState1 = 0;
-
-
-int button_prev_state[4];
-int button_pressed_count[4];
-
-
 void setup() {
+
   pinMode(SOUND, INPUT);
   pinMode(SOUNDANALOG, INPUT);
 
@@ -60,13 +52,11 @@ void setup() {
 }
 
 void loop() {
-
-
   green_light(G1, R1);
   other_lights_red(R1);
 
   if(button_pressed(button1, 0)){flash_red_green(R1);}
-  siren_sound();    //final change was to replace siren sound after button pressed. Replace if the code does not function
+  siren_sound();    
   delay(delay_green);
   siren_sound();
   green_off(G1);
