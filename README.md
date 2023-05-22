@@ -15,3 +15,8 @@ This project was made using Arduino UNO, but can also be made with Node MCU, Ras
 
 ## Pin Diagram
 ![Arduino Sketch](https://github.com/homit-dalia/Priority-Traffic-System-IoT/assets/103167599/9351ece6-9923-487b-904c-b2aeb2784ea6)
+
+## Working Images
+![IMG 1](https://github.com/homit-dalia/Priority-Traffic-System-IoT/assets/103167599/67230f0d-3df6-4837-b60a-0bee797a03cc)
+![IMG 2](https://github.com/homit-dalia/Priority-Traffic-System-IoT/assets/103167599/36d42dd4-70ee-42ea-8408-19732e17a5d3)
+![IMG 3](https://github.com/homit-dalia/Priority-Traffic-System-IoT/assets/103167599/6611582b-c2d5-4223-a375-6890670ecf2b)
